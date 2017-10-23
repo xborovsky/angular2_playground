@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="logout()">
+        Logout
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<div *ngIf="givenName">
+  <hr>
+  <p>You are logged in as: <b>{{ givenName }}</b></p>
+  <div class="claims">
+    <strong>Claims from Identity Token JWT:</strong>
+    <pre>{{claims | json}}</pre>
+  </div>
+</div>
