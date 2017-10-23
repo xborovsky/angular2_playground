@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<ul>
+  <li><a [routerLink]="['/']">Home</a></li>
+  <li><a [routerLink]="['/users', 'chris']">Chris's profile</a></li>
+  <li><a [routerLink]="['/users', 'nick']">Nick's profile</a></li>
+</ul>
+
+<router-outlet></router-outlet>
